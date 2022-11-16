@@ -41,11 +41,11 @@ router.post('/', async (req, res) => {
     pageCount: req.body.pageCount,
     description: req.body.description
   })
-  saveCover(book, req.body.cover)
 
   try {
     const newBook = await book.save()
     res.redirect(`books/${newBook.id}`)
+    saveCover(book, req.body.cover)
   } catch {
     renderNewPage(res, book, true)
   }
