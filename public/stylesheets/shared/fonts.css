@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Soft Sans Serif 7';
+    src: url('/fonts/SoftSansSerif7.woff2') format('woff2'),
+        url('/fonts/SoftSansSerif7.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
